@@ -19,6 +19,83 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/frog-eye.jpeg": {
+		"ft": 16384,
+		"iS": 48545,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/frog-eye.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/frog-hero.jpeg": {
+		"ft": 16384,
+		"iS": 61414,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/frog-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/frog-sideways.jpeg": {
+		"ft": 16384,
+		"iS": 34256,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/frog-sideways.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/froglooking.jpeg": {
+		"ft": 16384,
+		"iS": 21950,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/froglooking.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hangingfrog.jpeg": {
+		"ft": 16384,
+		"iS": 55344,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hangingfrog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hangingright.jpeg": {
+		"ft": 16384,
+		"iS": 45339,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hangingright.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/smallhidingfrog.jpeg": {
+		"ft": 16384,
+		"iS": 13293,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/smallhidingfrog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -44,14 +121,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/footer.html",
-		"oF": 0
-		},
-	"/dev/header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/header.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {
@@ -262,22 +331,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-6.html",
-		"oF": 0
-		},
-	"/dev/section-7.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-7.html",
-		"oF": 0
-		},
-	"/dev/section-8.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-8.html",
 		"oF": 0
 		},
 	"/README.md": {
