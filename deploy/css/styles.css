@@ -390,59 +390,59 @@ textarea {
 /* =============
     Section 1
 ============= */
-#section-1 {
+#section-1 div {
   display: grid; }
-  #section-1 > div {
-    grid-area: section-1; }
 
 /* =============
     Section 2
 ============= */
-#section-2 {
+#section-2 div {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-2 ."; }
-  #section-2 section {
-    grid-area: section-2; }
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "section-2-text section-2-image";
+  grid-gap: 20px; }
+  #section-2 div section {
+    grid-area: section-2-text; }
+  #section-2 div aside {
+    grid-area: section-2-image; }
+    #section-2 div aside img {
+      width: 100%; }
 
 /* =============
     Section 3
 ============= */
 #section-3 {
   display: grid; }
-  #section-3 > div {
-    grid-area: section-3; }
 
 /* =============
     Section 4
 ============= */
-#section-4 {
+#section-4 div {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-4 .";
   padding-top: 45px;
   padding-bottom: 45px; }
-  #section-4 > div {
+  #section-4 div section {
     grid-area: section-4; }
 
 /* =============
     Section 5
 ============= */
-#section-5 {
+#section-5 div {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-5 ."; }
-  #section-5 ul {
-    grid-area: section-5;
-    display: grid;
-    grid-gap: 20px; }
+  grid-template-columns: 1fr; }
 
 /* =============
     Section 6
 ============= */
-#section-6 {
+#section-6 div {
   display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-6 ."; }
-  #section-6 > div {
-    grid-area: section-6; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". section-6-aside ." "section-6-text section-6-text section-6-text"; }
+
+#section-6 section {
+  grid-area: section-6-text; }
+
+#section-6 aside {
+  grid-area: section-6-aside; }
