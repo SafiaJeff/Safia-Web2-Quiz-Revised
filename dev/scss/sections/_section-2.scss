@@ -2,12 +2,26 @@
     Section 2
 ============= */
 #section-2{
+    
     div {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "section-2-text section-2-image";
+        grid-template-columns: 10px auto 10px;
+        grid-template-areas: ". section-2-text ."
+                            ". section-2-image .";
         grid-gap: 20px;
-    
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "section-2-image section-2-text";
+        }
+
+        @include xl{
+            display: grid;
+            grid-template-columns: 1200px auto;
+            grid-template-areas: "section-2-image section-2-text";
+        }
+
         section {
             grid-area: section-2-text;
         }

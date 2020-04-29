@@ -392,15 +392,30 @@ textarea {
 ============= */
 #section-1 div {
   display: grid; }
-
+  #section-1 div img {
+    width: 100%; }
+    @media (min-width: 992px) {
+      #section-1 div img {
+        display: grid;
+        max-width: 1025px; } }
 /* =============
     Section 2
 ============= */
 #section-2 div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "section-2-text section-2-image";
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-2-text ." ". section-2-image .";
   grid-gap: 20px; }
+  @media (min-width: 992px) {
+    #section-2 div {
+      display: grid;
+      grid-template-columns: 50% auto;
+      grid-template-areas: "section-2-image section-2-text"; } }
+  @media (min-width: 1200px) {
+    #section-2 div {
+      display: grid;
+      grid-template-columns: 1200px auto;
+      grid-template-areas: "section-2-image section-2-text"; } }
   #section-2 div section {
     grid-area: section-2-text; }
   #section-2 div aside {
@@ -411,9 +426,12 @@ textarea {
 /* =============
     Section 3
 ============= */
-#section-3 {
-  display: grid; }
-
+#section-3 img {
+  display: grid;
+  width: 100%; }
+  @media (min-width: 992px) {
+    #section-3 img {
+      max-width: 1025px; } }
 /* =============
     Section 4
 ============= */
@@ -429,10 +447,29 @@ textarea {
 /* =============
     Section 5
 ============= */
-#section-5 div {
+#section-5 div ul {
   display: grid;
-  grid-template-columns: 1fr; }
-
+  grid-row-gap: 10px;
+  grid-column-gap: 10px; }
+  @media (min-width: 768px) {
+    #section-5 div ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
+  @media (min-width: 992px) {
+    #section-5 div ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
+  @media (min-width: 768px) {
+    #section-5 div ul #gallery-1 {
+      grid-area: gallery-1; } }
+  @media (min-width: 768px) {
+    #section-5 div ul #gallery-2 {
+      grid-area: gallery-2; } }
+  @media (min-width: 768px) {
+    #section-5 div ul #gallery-3 {
+      grid-area: gallery-3; } }
 /* =============
     Section 6
 ============= */
@@ -440,9 +477,12 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: ". section-6-aside ." "section-6-text section-6-text section-6-text"; }
-
-#section-6 section {
-  grid-area: section-6-text; }
-
-#section-6 aside {
-  grid-area: section-6-aside; }
+  @media (min-width: 992px) {
+    #section-6 div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "section-6-aside section-6-text"; } }
+  #section-6 div section {
+    grid-area: section-6-text; }
+  #section-6 div aside {
+    grid-area: section-6-aside; }
