@@ -2,12 +2,20 @@
     Section 3
 ============= */
 #section-3{
-    img {
-        display: grid;
-        width: 100%;
+    background-image: url('../img/hangingright.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 510px;
+    padding: 60px 0;
+    
 
-        @include lg{
-            max-width: 1025px;
-        }
+    @include md{
+        height: 525px;
     }
+
+    @include lg{
+        height: 685px;
+    }
+    
+    
 }

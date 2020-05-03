@@ -391,47 +391,79 @@ textarea {
     Section 1
 ============= */
 #section-1 div {
-  display: grid; }
-  #section-1 div img {
-    width: 100%; }
-    @media (min-width: 992px) {
-      #section-1 div img {
-        display: grid;
-        max-width: 1025px; } }
+  background-image: url("../img/frog-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 370px; }
+  @media (min-width: 768px) {
+    #section-1 div {
+      height: 510px; } }
+  @media (min-width: 992px) {
+    #section-1 div {
+      height: 680px; } }
 /* =============
     Section 2
 ============= */
-#section-2 div {
+#section-2 #section-2-right {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-2-text ." ". section-2-image .";
-  grid-gap: 20px; }
+  grid-template-areas: ". section-2-right .";
+  padding: 60px 0; }
+  #section-2 #section-2-right > div {
+    grid-area: section-2-right; }
+
+#section-2 aside {
+  background-image: url("../img/frog-eye.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 480px; }
+  @media (min-width: 768px) {
+    #section-2 aside {
+      height: 420px; } }
   @media (min-width: 992px) {
-    #section-2 div {
-      display: grid;
-      grid-template-columns: 50% auto;
-      grid-template-areas: "section-2-image section-2-text"; } }
-  @media (min-width: 1200px) {
-    #section-2 div {
-      display: grid;
-      grid-template-columns: 1200px auto;
-      grid-template-areas: "section-2-image section-2-text"; } }
-  #section-2 div section {
-    grid-area: section-2-text; }
-  #section-2 div aside {
-    grid-area: section-2-image; }
-    #section-2 div aside img {
-      width: 100%; }
+    #section-2 aside {
+      height: 740px; } }
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-2-img section-2-right"; }
+    #section-2 #section-2-img {
+      grid-area: section-2-img; }
+    #section-2 #section-2-right {
+      grid-area: section-2-right; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-2-img section-2-right"; }
+    #section-2 #section-2-right {
+      grid-area: section-2-right; } }
+
+@media (min-width: 768px) {
+  #section-2 {
+    padding: 80px 0; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    padding: 60px 20px; } }
 
 /* =============
     Section 3
 ============= */
-#section-3 img {
-  display: grid;
-  width: 100%; }
+#section-3 {
+  background-image: url("../img/hangingright.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 510px;
+  padding: 60px 0; }
+  @media (min-width: 768px) {
+    #section-3 {
+      height: 525px; } }
   @media (min-width: 992px) {
-    #section-3 img {
-      max-width: 1025px; } }
+    #section-3 {
+      height: 685px; } }
 /* =============
     Section 4
 ============= */
@@ -447,42 +479,76 @@ textarea {
 /* =============
     Section 5
 ============= */
-#section-5 div ul {
+#section-5 div {
   display: grid;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px; }
-  @media (min-width: 768px) {
-    #section-5 div ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
-  @media (min-width: 992px) {
-    #section-5 div ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
-  @media (min-width: 768px) {
+  grid-template-columns: 100%;
+  grid-template-areas: "section-5"; }
+  #section-5 div ul {
+    grid-area: section-5;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+    @media (min-width: 768px) {
+      #section-5 div ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
+    @media (min-width: 992px) {
+      #section-5 div ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
+    #section-5 div ul li {
+      background-size: cover;
+      height: 100%; }
     #section-5 div ul #gallery-1 {
-      grid-area: gallery-1; } }
-  @media (min-width: 768px) {
+      background-image: url("../img/hangingfrog.jpeg");
+      height: 300px; }
+      @media (min-width: 768px) {
+        #section-5 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 710px; } }
+      @media (min-width: 992px) {
+        #section-5 div ul #gallery-1 {
+          grid-area: gallery-1;
+          height: 710px; } }
     #section-5 div ul #gallery-2 {
-      grid-area: gallery-2; } }
-  @media (min-width: 768px) {
+      background-image: url("../img/frog-sideways.jpeg");
+      height: 300px; }
+      @media (min-width: 768px) {
+        #section-5 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 340px; } }
+      @media (min-width: 992px) {
+        #section-5 div ul #gallery-2 {
+          grid-area: gallery-2;
+          height: 340px; } }
     #section-5 div ul #gallery-3 {
-      grid-area: gallery-3; } }
+      background-image: url("../img/froglooking.jpeg");
+      height: 300px; }
+      @media (min-width: 768px) {
+        #section-5 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 340px; } }
+      @media (min-width: 992px) {
+        #section-5 div ul #gallery-3 {
+          grid-area: gallery-3;
+          height: 340px; } }
 /* =============
     Section 6
 ============= */
-#section-6 div {
+#section-6 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: ". section-6-aside ." "section-6-text section-6-text section-6-text"; }
-  @media (min-width: 992px) {
-    #section-6 div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "section-6-aside section-6-text"; } }
-  #section-6 div section {
-    grid-area: section-6-text; }
-  #section-6 div aside {
-    grid-area: section-6-aside; }
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-6 ."; }
+  #section-6 #section-6-content {
+    grid-area: section-6; }
+    @media (min-width: 992px) {
+      #section-6 #section-6-content > div {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "text-left img-right"; }
+        #section-6 #section-6-content > div #img-right {
+          grid-area: img-right; }
+        #section-6 #section-6-content > div #text-left {
+          grid-area: text-left; } }
