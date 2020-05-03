@@ -17,15 +17,18 @@
     aside {
         background-image: url('../img/frog-eye.jpeg');
         background-size: cover;
-        background-position: center;
+        background-position-x: -70px;
         height: 480px;
+        background-repeat: no-repeat;
         
         @include md{
             height: 420px;
+            background-position-x: -180px;
         }
 
         @include lg{
             height: 740px;
+            background-position-x: -430px;
         }
     }
 
