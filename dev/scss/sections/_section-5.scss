@@ -24,12 +24,11 @@
             }
 
             @include lg{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
                 grid-template-areas:
                         "gallery-1 gallery-2"
                         "gallery-1 gallery-3";
             }
+
 
             li {
                 background-size: cover;
@@ -49,9 +48,15 @@
                 }
 
                 @include lg{
-                    grid-area: gallery-1;
                     height: 710px;
                 }
+
+                @include xl{
+                    max-width: 1200px;
+                }
+
+
+
             }
 
             #gallery-2{
@@ -64,8 +69,11 @@
                 }
 
                 @include lg{
-                    grid-area: gallery-2;
                     height: 340px;
+                }
+
+                @include xl{
+                    max-width: 500px;
                 }
             }
 
@@ -79,11 +87,20 @@
                 }
 
                 @include lg{
-                    grid-area: gallery-3;
                     height: 340px;
+                }
+
+                @include xl{
+                    max-width: 500px;
                 }
             }
 
         }
+
+        @include xl{
+            grid-template-columns: auto 1200px auto;
+            grid-template-areas: ". section-5 .";
+        }
+
     }
 }

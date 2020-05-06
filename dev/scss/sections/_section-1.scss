@@ -8,6 +8,7 @@
         background-size: cover;
         background-position: center;
         height: 370px;
+        position: relative;
 
         @include md{
             height: 510px;
@@ -17,15 +18,28 @@
             height: 680px;
         }
 
-    
+        @include xl{
+            height: 900px;
+        }
 
-        // img{
-        //     width: 100%;
-        //     @include lg{
-        //         display: grid;
-        //         max-width: 1025px;
-        //     }
-        // }
+        h1{
+            position: absolute;
+            text-align: left;
+            bottom: -10px;
+            margin-left: 38px;
+
+            @include md{
+                margin-left: 90px;
+                font-size: 110px;
+            }
+
+            @include lg{
+                margin-left: 150px;
+                bottom: 20px;
+                font-size: 130px;
+            }
+        }
+
     
     }   
 }

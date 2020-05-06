@@ -2,65 +2,71 @@
     Section 2
 ============= */
 #section-2{ 
-    #section-2-right {
+
+    @include xl{
         display: grid;
-        grid-template-columns: 10px auto 10px;
-        grid-template-areas: ". section-2-right .";
-        padding: 60px 0;
-
-        >div{
-            grid-area: section-2-right;
-        }
-
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-container .";
     }
 
-    aside {
-        background-image: url('../img/frog-eye.jpeg');
-        background-size: cover;
-        background-position-x: -70px;
-        height: 480px;
-        background-repeat: no-repeat;
-        
+    #section-2-container{
         @include md{
-            height: 420px;
-            background-position-x: -180px;
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "section-2-image section-2-container";
+            margin-top: 80px;
+            // margin-bottom: 80px;
         }
 
-        @include lg{
-            height: 740px;
-            background-position-x: -430px;
-        }
-    }
-
-    @include md{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "section-2-img section-2-right";
-
-        #section-2-img{
-            grid-area: section-2-img;
-        }
-        #section-2-right{
-            grid-area: section-2-right;
+        @include xl{
+            grid-area: section-2-container;
         }
 
-    }
+        section{
+            text-align: center;
+            margin: 60px 10px;
+    
+            @include md{
+                margin-left: 20px;
+                margin-top: 100px;
+                margin-right: 10px;
+                font-size: 20px;
+            }
 
-    @include lg{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "section-2-img section-2-right";
-
-        #section-2-right{
-            grid-area: section-2-right;
+            @include lg{
+                margin-top: 230px;
+                font-size: 25px;
+            }
         }
-    }
 
-    @include md{
-        padding: 80px 0;
-    }
+        aside{
+            background-image: url('../img/frog-eye.jpeg');
+            background-size: cover;
+            height: 480px;
+            background-position-x: -150px;
+            background-repeat: no-repeat;
+            margin-bottom: 35px;
 
-    @include lg{
-        padding: 60px 20px;
+            @include md{
+                grid-area: section-2-image;
+                height: 420px;
+                background-position-x: -180px;
+            }
+    
+            @include lg{
+                height: 740px;
+                background-position-x: -430px;
+                margin-left: 20px;
+            }
+    
+            @include xl{
+                height: 740px;
+            }
+
+
+        }
+
+    
+
     }
 }
