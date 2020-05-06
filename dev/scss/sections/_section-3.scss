@@ -3,35 +3,34 @@
 ============= */
 #section-3{
     
-    background-image: url('../img/hangingright.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 510px;
-    padding: 60px 0;
-    background-position-x: -300px;
-    background-repeat: no-repeat;
-    
-
-    @include md{
-        height: 525px;
-        background-position-x: 0px;
-    }
-
-    @include lg{
-        height: 685px;
-    }
-
     div{
-        
-        @include xl{
-            display: grid;
-            grid-template-columns: auto 1200px auto;
-            grid-template-areas: ". frog .";
+        background-image: url('../img/hangingright.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 510px;
+        padding: 60px 0;
+        background-position-x: -300px;
+        background-repeat: no-repeat;
     
-            #section-3-frog{
-                grid-area: frog;
-            }
+        @include md{
+            height: 525px;
+            background-position-x: 0px;
         }
+    
+        @include lg{
+            height: 685px;
+        }
+
+        @include xl{
+            grid-area: frog;;
+        }
+    
     }
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". frog .";
+    } 
     
 }

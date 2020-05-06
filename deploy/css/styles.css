@@ -408,6 +408,12 @@ footer {
 /* =============
     Section 1
 ============= */
+@media (min-width: 1200px) {
+  #section-1 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-1-container ."; } }
+
 #section-1 div {
   background-image: url("../img/frog-hero.jpeg");
   background-size: cover;
@@ -422,7 +428,8 @@ footer {
       height: 680px; } }
   @media (min-width: 1200px) {
     #section-1 div {
-      height: 900px; } }
+      height: 900px;
+      grid-area: section-1-container; } }
   #section-1 div h1 {
     position: absolute;
     text-align: left;
@@ -493,7 +500,7 @@ footer {
 /* =============
     Section 3
 ============= */
-#section-3 {
+#section-3 div {
   background-image: url("../img/hangingright.jpeg");
   background-size: cover;
   background-position: center;
@@ -502,19 +509,21 @@ footer {
   background-position-x: -300px;
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
-    #section-3 {
+    #section-3 div {
       height: 525px;
       background-position-x: 0px; } }
   @media (min-width: 992px) {
-    #section-3 {
+    #section-3 div {
       height: 685px; } }
   @media (min-width: 1200px) {
     #section-3 div {
-      display: grid;
-      grid-template-columns: auto 1200px auto;
-      grid-template-areas: ". frog ."; }
-      #section-3 div #section-3-frog {
-        grid-area: frog; } }
+      grid-area: frog; } }
+@media (min-width: 1200px) {
+  #section-3 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". frog ."; } }
+
 /* =============
     Section 4
 ============= */
@@ -540,95 +549,94 @@ footer {
 /* =============
     Section 5
 ============= */
-#section-5 div {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "section-5"; }
-  #section-5 div ul {
-    grid-area: section-5;
+@media (min-width: 992px) {
+  #section-5 {
+    margin: 0 10px; } }
+
+@media (min-width: 1200px) {
+  #section-5 {
     display: grid;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px; }
-    @media (min-width: 768px) {
-      #section-5 div ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
-    @media (min-width: 992px) {
-      #section-5 div ul {
-        grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-3"; } }
-    #section-5 div ul li {
-      background-size: cover;
-      height: 100%; }
-    #section-5 div ul #gallery-1 {
-      background-image: url("../img/hangingfrog.jpeg");
-      background-position-y: -120px;
-      height: 300px;
-      background-repeat: no-repeat; }
-      @media (min-width: 768px) {
-        #section-5 div ul #gallery-1 {
-          grid-area: gallery-1;
-          height: 710px; } }
-      @media (min-width: 992px) {
-        #section-5 div ul #gallery-1 {
-          height: 710px; } }
-      @media (min-width: 1200px) {
-        #section-5 div ul #gallery-1 {
-          max-width: 1200px; } }
-    #section-5 div ul #gallery-2 {
-      background-image: url("../img/frog-sideways.jpeg");
-      height: 300px; }
-      @media (min-width: 768px) {
-        #section-5 div ul #gallery-2 {
-          grid-area: gallery-2;
-          height: 340px; } }
-      @media (min-width: 992px) {
-        #section-5 div ul #gallery-2 {
-          height: 340px; } }
-      @media (min-width: 1200px) {
-        #section-5 div ul #gallery-2 {
-          max-width: 500px; } }
-    #section-5 div ul #gallery-3 {
-      background-image: url("../img/froglooking.jpeg");
-      height: 300px; }
-      @media (min-width: 768px) {
-        #section-5 div ul #gallery-3 {
-          grid-area: gallery-3;
-          height: 340px; } }
-      @media (min-width: 992px) {
-        #section-5 div ul #gallery-3 {
-          height: 340px; } }
-      @media (min-width: 1200px) {
-        #section-5 div ul #gallery-3 {
-          max-width: 500px; } }
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-5 ."; } }
+
+#section-5 ul {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(2, 300px); }
+  @media (min-width: 768px) {
+    #section-5 ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 340px);
+      grid-template-areas: "gallery-1 gallery-1" "gallery-1 gallery-1" "gallery-2 gallery-3"; } }
   @media (min-width: 1200px) {
-    #section-5 div {
-      grid-template-columns: auto 1200px auto;
-      grid-template-areas: ". section-5 ."; } }
+    #section-5 ul {
+      grid-area: section-5; } }
+  #section-5 ul li {
+    background-position: center;
+    background-size: cover; }
+  #section-5 ul #gallery-1 {
+    background-image: url("../img/hangingfrog.jpeg");
+    background-position-y: -100px;
+    height: 300px;
+    background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      #section-5 ul #gallery-1 {
+        grid-area: gallery-1;
+        height: 710px; } }
+    @media (min-width: 992px) {
+      #section-5 ul #gallery-1 {
+        height: 710px; } }
+  #section-5 ul #gallery-2 {
+    background-image: url("../img/frog-sideways.jpeg");
+    height: 300px; }
+    @media (min-width: 768px) {
+      #section-5 ul #gallery-2 {
+        grid-area: gallery-2;
+        height: 340px; } }
+    @media (min-width: 992px) {
+      #section-5 ul #gallery-2 {
+        height: 340px; } }
+  #section-5 ul #gallery-3 {
+    background-image: url("../img/froglooking.jpeg");
+    height: 300px; }
+    @media (min-width: 768px) {
+      #section-5 ul #gallery-3 {
+        grid-area: gallery-3;
+        height: 340px; } }
+    @media (min-width: 992px) {
+      #section-5 ul #gallery-3 {
+        height: 340px; } }
 /* =============
     Section 6
 ============= */
 #section-6 {
-  padding: 41px 0 36px;
-  display: grid;
-  grid-area: section-6; }
-  #section-6 div #aside {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ". aside-6 .";
-    grid-area: aside-6; }
-  #section-6 div section {
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-6 .";
-    text-align: justify; }
-    #section-6 div section div {
-      grid-area: section-6; }
-    @media (min-width: 768px) {
-      #section-6 div section {
-        grid-template-columns: auto 70% auto; } }
+  padding: 41px 0 36px; }
   @media (min-width: 1200px) {
     #section-6 {
       display: grid;
       grid-template-columns: auto 1200px auto;
       grid-template-areas: ". section-6 ."; } }
+  @media (min-width: 992px) {
+    #section-6 > div {
+      display: grid;
+      grid-template-columns: 35% auto;
+      grid-area: section-6; } }
+  #section-6 > div aside {
+    text-align: center;
+    margin-bottom: 34px; }
+    @media (min-width: 768px) {
+      #section-6 > div aside {
+        margin-bottom: 50px; } }
+  #section-6 > div section {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-6 .";
+    text-align: justify; }
+    @media (min-width: 768px) {
+      #section-6 > div section {
+        grid-template-columns: auto 70% auto; } }
+    @media (min-width: 992px) {
+      #section-6 > div section {
+        margin-top: 90px; } }
+    #section-6 > div section > div {
+      grid-area: section-6; }
