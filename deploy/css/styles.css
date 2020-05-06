@@ -389,6 +389,22 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #A1C517;
+  padding: 11px 0;
+  text-align: center;
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto 200px auto;
+  grid-template-areas: "logo . copyright"; }
+  footer #logo {
+    grid-area: logo; }
+  footer p {
+    grid-area: copyright; }
+  @media (min-width: 768px) {
+    footer {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: ". logo copyright"; } }
 /* =============
     Section 1
 ============= */

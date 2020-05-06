@@ -1,3 +1,28 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    background-color: $light-green;
+    padding: 11px 0;
+    text-align: center;
+    color: $white;
+
+    display: grid;
+    grid-template-columns: auto 200px auto;
+    grid-template-areas: "logo . copyright";
+
+    #logo{
+        grid-area: logo;
+    }
+
+    p{
+        grid-area: copyright;
+    }
+
+    @include md{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: ". logo copyright";
+    }
+
+}
