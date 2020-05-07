@@ -21,12 +21,12 @@
 
         @include md{
             grid-template-columns: auto 70% auto;
-            font-size: 20px;
+            font-size: rem-calc(20);
         }
 
         @include xl{
             grid-template-columns: auto 650px auto;
-            font-size: 30px;
+            font-size: rem-calc(25);
         }
     }
 }

@@ -37,13 +37,13 @@
 
             @include md{
                 margin-left: 90px;
-                font-size: 110px;
+                font-size: rem-calc(105);
             }
 
             @include lg{
                 margin-left: 150px;
                 bottom: 20px;
-                font-size: 130px;
+                font-size: rem-calc(120);
             }
         }
 

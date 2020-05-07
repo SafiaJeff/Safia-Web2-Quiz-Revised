@@ -353,7 +353,7 @@ body {
 h1 {
   font-family: 'londrina solid';
   color: #FFBD00;
-  font-size: 73px; }
+  font-size: 4.375rem; }
 
 h2 {
   font-family: 'rubik';
@@ -399,7 +399,7 @@ textarea {
         margin: 0 30px 0 0; } }
     #nav-container ul li a:link,
     #nav-container ul li a:visited {
-      color: #FFBD00;
+      color: #fff;
       text-decoration: none; }
     #nav-container ul li a:hover,
     #nav-container ul li a:active {
@@ -409,7 +409,7 @@ textarea {
     Header
 ============= */
 header {
-  background-color: #fff;
+  background-color: #FFBD00;
   left: 0;
   position: fixed;
   top: 0;
@@ -420,10 +420,14 @@ header {
     grid-template-columns: 80% auto; }
     header > div section,
     header > div nav {
-      padding: 20px; }
+      padding: 10px; }
+    header > div section h1 {
+      color: #fff;
+      font-size: 20px; }
     header > div #logo-container {
       grid-area: logo; }
     header > div #burger-container {
+      color: #fff;
       align-items: center;
       display: flex;
       grid-area: burger;
@@ -434,7 +438,7 @@ header {
       header > div #burger-container i {
         cursor: pointer; }
     header > div #nav-container {
-      background-color: #fff;
+      background-color: #A1C517;
       grid-area: nav;
       display: none;
       padding: 20px; }
@@ -493,12 +497,12 @@ footer {
     @media (min-width: 768px) {
       #section-1 div h1 {
         margin-left: 90px;
-        font-size: 110px; } }
+        font-size: 6.5625rem; } }
     @media (min-width: 992px) {
       #section-1 div h1 {
         margin-left: 150px;
         bottom: 20px;
-        font-size: 130px; } }
+        font-size: 7.5rem; } }
 /* =============
     Section 2
 ============= */
@@ -527,11 +531,11 @@ footer {
       margin-left: 20px;
       margin-top: 100px;
       margin-right: 10px;
-      font-size: 20px; } }
+      font-size: 1.25rem; } }
   @media (min-width: 992px) {
     #section-2 #section-2-container section {
       margin-top: 230px;
-      font-size: 25px; } }
+      font-size: 1.5625rem; } }
 #section-2 #section-2-container aside {
   background-image: url("../img/frog-eye.jpeg");
   background-size: cover;
@@ -596,11 +600,11 @@ footer {
   @media (min-width: 768px) {
     #section-4 div {
       grid-template-columns: auto 70% auto;
-      font-size: 20px; } }
+      font-size: 1.25rem; } }
   @media (min-width: 1200px) {
     #section-4 div {
       grid-template-columns: auto 650px auto;
-      font-size: 30px; } }
+      font-size: 1.5625rem; } }
 /* =============
     Section 5
 ============= */
@@ -689,9 +693,11 @@ footer {
     text-align: justify; }
     @media (min-width: 768px) {
       #section-6 > div section {
-        grid-template-columns: auto 70% auto; } }
+        grid-template-columns: auto 70% auto;
+        font-size: 1.0625rem; } }
     @media (min-width: 992px) {
       #section-6 > div section {
-        margin-top: 90px; } }
+        margin-top: 90px;
+        font-size: 1.25rem; } }
     #section-6 > div section > div {
       grid-area: section-6; }

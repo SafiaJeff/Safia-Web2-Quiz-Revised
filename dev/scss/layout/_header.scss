@@ -2,7 +2,7 @@
     Header
 ============= */
 header {
-    background-color: $white;
+    background-color: $yellow;
     left: 0;
     position: fixed;
     top: 0;
@@ -16,7 +16,14 @@ header {
  
         section,
         nav {
-            padding: 20px;
+            padding: 10px;
+        }
+
+        section{
+            h1{
+                color: $white;
+                font-size: 20px;
+            }
         }
 
         #logo-container {
@@ -24,6 +31,7 @@ header {
             
         }
         #burger-container {
+            color: $white;
             align-items: center;
             display: flex;
             grid-area: burger;
@@ -38,7 +46,7 @@ header {
         }
 
         #nav-container {
-            background-color: $white;
+            background-color: $light-green;
             grid-area: nav;
             display: none;
             padding: 20px;

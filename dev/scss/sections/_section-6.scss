@@ -36,10 +36,12 @@
 
             @include md{
                 grid-template-columns: auto 70% auto;
+                font-size: rem-calc(17);
             }
 
             @include lg{
                 margin-top: 90px;
+                font-size: rem-calc(20);
             }
 
             >div{
