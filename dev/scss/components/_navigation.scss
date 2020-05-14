@@ -13,7 +13,8 @@
         }
 
         li {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
+          
 
             @include lg {
                 align-items: center;
@@ -30,6 +31,7 @@
             a:hover,
             a:active {
                 color: $black;
+
             }
 
         }

@@ -28,6 +28,20 @@ header {
 
         #logo-container {
             grid-area: logo;
+            padding-left: 20px;
+
+            a:link,
+            a:visited{
+                color: $white;
+                font-size: rem-calc(20);
+                padding: 10px 10px;
+                text-decoration: none;
+            } 
+            
+            a:hover,
+            a:active{
+                color: $light-green;
+            }
             
         }
         #burger-container {

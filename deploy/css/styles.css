@@ -362,6 +362,13 @@ h2 {
 h3 {
   font-family: 'pavanam'; }
 
+#nav-container {
+  font-family: 'pavanam';
+  font-size: 0.9375rem; }
+
+#logo-container {
+  font-family: 'londrina solid'; }
+
 /* =============
     Buttons
 ============= */
@@ -391,7 +398,7 @@ textarea {
       display: flex;
       justify-content: flex-end; } }
   #nav-container ul li {
-    margin-bottom: 20px; }
+    margin-bottom: 12px; }
     @media (min-width: 992px) {
       #nav-container ul li {
         align-items: center;
@@ -425,7 +432,17 @@ header {
       color: #fff;
       font-size: 20px; }
     header > div #logo-container {
-      grid-area: logo; }
+      grid-area: logo;
+      padding-left: 20px; }
+      header > div #logo-container a:link,
+      header > div #logo-container a:visited {
+        color: #fff;
+        font-size: 1.25rem;
+        padding: 10px 10px;
+        text-decoration: none; }
+      header > div #logo-container a:hover,
+      header > div #logo-container a:active {
+        color: #A1C517; }
     header > div #burger-container {
       color: #fff;
       align-items: center;
