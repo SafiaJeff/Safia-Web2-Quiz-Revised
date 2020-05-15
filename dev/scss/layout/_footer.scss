@@ -1,28 +1,55 @@
 /* =============
     Footer
 ============= */
-
-footer{
-    background-color: $light-green;
-    padding: 11px 0;
-    text-align: center;
+#footer{
+    background-color: $black;
     color: $white;
+    padding: 50px 80px;
+    
 
     display: grid;
-    grid-template-columns: auto 200px auto;
-    grid-template-areas: "logo . copyright";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". footer ."
 
-    #logo{
-        grid-area: logo;
+    #footer-content{
+        grid-area: footer;
+        grid-template-rows: auto auto;
+        grid-template-areas: "icons"
+                                "drexel";
     }
 
+    #social-icons{
+        grid-area: icons;
+    }
+                            
     p{
-        grid-area: copyright;
+        grid-area: drexel;
     }
+    
+    // display: grid;
+    // grid-template-columns: 50px auto 50px;
+    // grid-template-areas: ". footer .";
 
-    @include md{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-areas: ". logo copyright";
-    }
+    // #footer-content{
+    //     grid-area: footer;
+    //     display: grid;
+    //     grid-template-columns: auto;
+    //     grid-template-rows: auto auto;
+    //     grid-template-areas: "icons drexel";
+
+    //     #social-icons{
+    //         grid-area: icons;
+    //     }
+
+    //     p{
+    //         grid-area: drexel;
+    //     }
+    // }
+
+
+
+
+
+
 
 }

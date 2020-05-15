@@ -1,32 +1,28 @@
 /* =============
     Typography
 ============= */
-
-body{
-    font-family: 'pavanam', sans-serif;
-}
-
 h1{
-    font-family: 'londrina solid';
-    color: $yellow;
-    font-size: rem-calc(70);
-
+    color: $teal;
+    font-family: 'comfortaa';
 }
 
 h2{
-    font-family: 'rubik';
-    color: $light-green;
+    color: $blue;
+    font-family: 'comfortaa';
 }
 
-h3{
-    font-family: 'pavanam';
+p{
+    font-family: 'comfortaa';
+
 }
 
-#nav-container{
-    font-family: 'pavanam';
-    font-size: rem-calc(15);
-}
+#section-2{
+    h1{
+        font-family: montserrat-bold;
+        color: $black;
+    }
 
-#logo-container{
-    font-family: 'londrina solid';
+    p{
+        line-height: 25px;
+    }
 }

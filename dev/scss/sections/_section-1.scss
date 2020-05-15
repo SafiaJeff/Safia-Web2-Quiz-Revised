@@ -1,52 +1,88 @@
 /* =============
     Section 1
 ============= */
-
 #section-1{
-    @include xl{
-        display: grid;
-        grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". section-1-container .";
-    }
-
-    div {
-        background-image: url('../img/frog-hero.jpeg');
+    div{
+        background-image: url('../img/main_slide_21.jpg');
         background-size: cover;
         background-position: center;
-        height: 370px;
-        position: relative;
+        height: 600px;
+        position:relative;
 
-        @include md{
-            height: 510px;
-        } 
+        text-align: center;
+        padding-top: 80px;
 
-        @include lg{
-            height: 680px;
-        }
-
-        @include xl{
-            height: 900px;
-            grid-area: section-1-container;
-        }
-
-        h1{
-            position: absolute;
-            text-align: left;
-            bottom: -10px;
-            margin-left: 38px;
-
+        h2{
             @include md{
-                margin-left: 90px;
-                font-size: rem-calc(105);
+                max-width: 500px;
+
+                margin-left: auto;
+                margin-right: auto;
             }
 
             @include lg{
-                margin-left: 150px;
-                bottom: 20px;
-                font-size: rem-calc(120);
+                max-width: 650px;
+            }
+
+            @include xl{
+                max-width: 700px;
             }
         }
 
+        #circle{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid $white;
+            margin-top: 180px;
+
+            margin-left: auto;
+            margin-right: auto;
     
-    }   
+            font-size: rem-calc(20);
+            color: #fff;
+            line-height: 90px;
+
+            @include md{
+                width: 100px;
+                height: 100px;
+                line-height: 110px;
+                border-width: 3px;
+                margin-top: 280px;
+            }
+
+            @include lg{
+                width: 120px;
+                height: 120px;
+                line-height: 130px;
+                font-size: rem-calc(25);
+                border-width: 5px;
+                margin-top: 350px;
+            }
+
+            @include lg{
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+            }
+        }
+
+        @include md{
+            height: 700px;
+        }
+
+        @include lg{
+            height: 800px;
+            font-size: rem-calc(18);
+        }
+
+        @include xl{
+            font-size: rem-calc(20);
+            max-height: 950px;
+        }
+
+        
+
+    }
+
 }

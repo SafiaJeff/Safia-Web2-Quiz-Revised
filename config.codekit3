@@ -19,102 +19,103 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/frog-eye.jpeg": {
+	"/deploy/img/2342441.jpg": {
 		"ft": 16384,
-		"iS": 48545,
+		"iS": 152155,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/frog-eye.jpg",
+		"oAP": "/deploy/img/2342441.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/frog-hero.jpeg": {
+	"/deploy/img/4141.jpg": {
 		"ft": 16384,
-		"iS": 61414,
+		"iS": 104961,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/frog-hero.jpg",
+		"oAP": "/deploy/img/4141.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/frog-sideways.jpeg": {
+	"/deploy/img/4441.jpg": {
 		"ft": 16384,
-		"iS": 34256,
+		"iS": 139189,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/frog-sideways.jpg",
+		"oAP": "/deploy/img/4441.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/froglooking.jpeg": {
-		"ft": 16384,
-		"iS": 21950,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/froglooking.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/hangingfrog.jpeg": {
-		"ft": 16384,
-		"iS": 55344,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/hangingfrog.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/hangingright.jpeg": {
-		"ft": 16384,
-		"iS": 45339,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/hangingright.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/smallhidingfrog.jpeg": {
-		"ft": 16384,
-		"iS": 13293,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/smallhidingfrog.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/smallhidingfrog.png": {
+	"/deploy/img/icons/facebook.png": {
 		"ft": 32768,
-		"iS": 115219,
+		"iS": 624,
 		"oA": 0,
-		"oAP": "/deploy/img/smallhidingfrog.png",
+		"oAP": "/deploy/img/icons/facebook.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/icons/instagram.png": {
+		"ft": 32768,
+		"iS": 1146,
+		"oA": 0,
+		"oAP": "/deploy/img/icons/instagram.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/icons/twitter.png": {
+		"ft": 32768,
+		"iS": 841,
+		"oA": 0,
+		"oAP": "/deploy/img/icons/twitter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/icons/youtube.png": {
+		"ft": 32768,
+		"iS": 774,
+		"oA": 0,
+		"oAP": "/deploy/img/icons/youtube.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg": {
+		"ft": 16384,
+		"iS": 84293,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/main_slide_21.jpg": {
+		"ft": 16384,
+		"iS": 1423110,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/main_slide_21.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/index.html": {
@@ -142,22 +143,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/footer.html",
-		"oF": 0
-		},
-	"/dev/header.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/header.html",
-		"oF": 0
-		},
-	"/dev/header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/header.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {
@@ -348,45 +333,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/_section-4.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-4.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/dev/scss/sections/_section-5.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-5.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/dev/scss/sections/_section-6.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-6.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -422,30 +368,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-3.html",
-		"oF": 0
-		},
-	"/dev/section-4.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-4.html",
-		"oF": 0
-		},
-	"/dev/section-5.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-5.html",
-		"oF": 0
-		},
-	"/dev/section-6.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-6.html",
 		"oF": 0
 		},
 	"/README.md": {
