@@ -13,41 +13,50 @@
         }
     }
 
+    #legs-img{
+        background-image: url('../img/4141.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 320px;
+        
+    }
+
     #section-2-container{
 
         @include md{
             display: grid;
-            grid-template-columns: 1fr 300px;
+            grid-template-columns: 70% 30%;
             grid-template-areas: "text img";
 
             #section-2-content{
                 grid-area: text;
-                margin: 100px 20px;
+                margin: 10px 20px;
                 
             }
 
-            #legs-img{
-                grid-area: img;
-                width: 250px;
-                height: auto;
-                
-            }
+            
         }
 
         @include lg{
-            grid-template-columns: auto auto;
+            grid-template-columns: 50% 50%;
             grid-template-areas: "img text";
 
             #section-2-content{
                 text-align: justify;
-                padding: 10px 20px;
-                margin: 150px 20px;
+                padding: 110px 60px;
+                font-size: rem-calc(18);
             }
 
-
+            #legs-img{
+                height: 600px;
+                grid-area: img;
+            }
         }
 
-
+        @include xl{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
 
     }
 

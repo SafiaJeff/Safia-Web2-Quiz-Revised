@@ -358,7 +358,21 @@ p {
   color: #000; }
 
 #section-2 p {
-  line-height: 25px; }
+  line-height: 25px;
+  font-family: lato; }
+
+#section-3 h1 {
+  font-family: montserrat-bold;
+  color: #000; }
+
+#section-3 h2 {
+  font-family: montserrat-bold; }
+
+#section-3 p {
+  font-family: lato; }
+
+#section-3 span {
+  font-weight: bold; }
 
 /* =============
     Buttons
@@ -413,17 +427,20 @@ textarea {
   background-color: #000;
   color: #fff;
   padding: 50px 80px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: ". footer ." #footer-content;
-    grid-template-areas-grid-area: footer;
-    grid-template-areas-grid-template-rows: auto auto;
-    grid-template-areas-grid-template-areas: "icons" "drexel"; }
+  text-align: center; }
+  @media (min-width: 992px) {
+    #footer {
+      text-align: right; } }
+  #footer span {
+    color: #F0593A; }
   #footer #social-icons {
-    grid-area: icons; }
-  #footer p {
-    grid-area: drexel; }
-
+    display: flex;
+    justify-content: center; }
+    #footer #social-icons #fb, #footer #social-icons #ig, #footer #social-icons #tw, #footer #social-icons #yt {
+      margin: 10px 10px; }
+    @media (min-width: 992px) {
+      #footer #social-icons {
+        justify-content: start; } }
 /* =============
     Section 1
 ============= */
@@ -498,61 +515,96 @@ textarea {
     padding: 30px 10px 50px 10px; }
     #section-2 #section-2-content h1 {
       text-align: center; }
+  #section-2 #legs-img {
+    background-image: url("../img/4141.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 320px; }
   @media (min-width: 768px) {
     #section-2 #section-2-container {
       display: grid;
-      grid-template-columns: 1fr 300px;
+      grid-template-columns: 70% 30%;
       grid-template-areas: "text img"; }
       #section-2 #section-2-container #section-2-content {
         grid-area: text;
-        margin: 100px 20px; }
-      #section-2 #section-2-container #legs-img {
-        grid-area: img;
-        width: 250px;
-        height: auto; } }
+        margin: 10px 20px; } }
   @media (min-width: 992px) {
     #section-2 #section-2-container {
-      grid-template-columns: auto auto;
+      grid-template-columns: 50% 50%;
       grid-template-areas: "img text"; }
       #section-2 #section-2-container #section-2-content {
         text-align: justify;
-        padding: 10px 20px;
-        margin: 150px 20px; } }
+        padding: 110px 60px;
+        font-size: 1.125rem; }
+      #section-2 #section-2-container #legs-img {
+        height: 600px;
+        grid-area: img; } }
+  @media (min-width: 1200px) {
+    #section-2 #section-2-container {
+      padding-left: 100px;
+      padding-right: 100px; } }
 /* =============
     Section 3
 ============= */
 #section-3 div {
-  padding: 30px 10px; }
+  padding: 10px 10px; }
+  #section-3 div h1 {
+    text-align: center; }
   #section-3 div img {
-    height: 300px; }
+    height: 200px; }
   #section-3 div h1 {
     text-align: center; }
   #section-3 div #mockups h2 {
     text-align: center;
     color: #000; }
   #section-3 div #mockups p {
-    padding: 10px 10px; }
-  #section-3 div #mockups #hanging-sign {
-    background-color: #EEEEEE; }
-  #section-3 div #mockups #biz-card {
-    background-color: #EEEEEE; }
-  #section-3 div #mockups #biz-card-2 {
-    background-color: #EEEEEE; }
+    padding: 10px 15px; }
+  #section-3 div #mockups #hanging-sign, #section-3 div #mockups #biz-card, #section-3 div #mockups #biz-card-2 {
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto; }
   @media (min-width: 768px) {
     #section-3 div #mockups {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "sign biz-1" "biz-2 biz-2";
-      grid-gap: 40px; }
+      gap: 10px 10px;
+      grid-template-areas: "P1 P1 P2 P2"  ". P3 P3 ."; }
       #section-3 div #mockups #hanging-sign {
-        grid-area: sign; }
+        grid-area: P1; }
+        #section-3 div #mockups #hanging-sign img {
+          max-width: 350px; }
+        #section-3 div #mockups #hanging-sign #date1 {
+          padding-top: 0px;
+          padding-bottom: 0px; }
       #section-3 div #mockups #biz-card {
-        grid-area: biz-1; }
+        grid-area: P2; }
+        #section-3 div #mockups #biz-card img {
+          max-width: 350px; }
+        #section-3 div #mockups #biz-card #date2 {
+          padding-top: 20px;
+          padding-bottom: 0px; }
       #section-3 div #mockups #biz-card-2 {
-        grid-area: biz-2; } }
+        grid-area: P3; }
+        #section-3 div #mockups #biz-card-2 img {
+          max-width: 350px; }
+        #section-3 div #mockups #biz-card-2 #date3 {
+          padding-top: 50px;
+          padding-bottom: 0px; } }
   @media (min-width: 992px) {
     #section-3 div #mockups {
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto;
-      grid-template-areas: "sign biz-1 biz-2"; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "card1 card2 card3"; }
+      #section-3 div #mockups #hanging-sign {
+        grid-area: card1; }
+      #section-3 div #mockups #biz-card {
+        grid-area: card2; }
+      #section-3 div #mockups #biz-card-2 {
+        grid-area: card3; } }
+  @media (min-width: 1200px) {
+    #section-3 div #mockups {
+      margin-left: 100px;
+      margin-right: 100px; } }

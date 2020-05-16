@@ -5,26 +5,51 @@
     background-color: $black;
     color: $white;
     padding: 50px 80px;
+    text-align: center;
+
+    @include lg{
+        text-align: right;
+    }
+
+    span{
+        color: $red;
+    }
+
+   #social-icons{
+        display: flex;
+        justify-content: center;
+
+        #fb, #ig, #tw, #yt{
+            margin: 10px 10px;
+        }
+
+        @include lg{
+            justify-content: start;
+        }
+   }
+
+
+
     
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: ". footer ."
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-areas: ". footer ."
 
-    #footer-content{
-        grid-area: footer;
-        grid-template-rows: auto auto;
-        grid-template-areas: "icons"
-                                "drexel";
-    }
+    // #footer-content{
+    //     grid-area: footer;
+    //     grid-template-rows: auto auto;
+    //     grid-template-areas: "icons"
+    //                             "drexel";
+    // }
 
-    #social-icons{
-        grid-area: icons;
-    }
+    // #social-icons{
+    //     grid-area: icons;
+    // }
                             
-    p{
-        grid-area: drexel;
-    }
+    // p{
+    //     grid-area: drexel;
+    // }
     
     // display: grid;
     // grid-template-columns: 50px auto 50px;
