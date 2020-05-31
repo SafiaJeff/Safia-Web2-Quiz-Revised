@@ -19,103 +19,143 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/2342441.jpg": {
+	"/deploy/img/bizcard-stack.jpg": {
 		"ft": 16384,
 		"iS": 152155,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/2342441.jpg",
+		"oAP": "/deploy/img/bizcard-stack.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/4141.jpg": {
-		"ft": 16384,
-		"iS": 104961,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/4141.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/4441.jpg": {
-		"ft": 16384,
-		"iS": 139189,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/4441.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/icons/facebook.png": {
-		"ft": 32768,
-		"iS": 624,
-		"oA": 0,
-		"oAP": "/deploy/img/icons/facebook.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/icons/instagram.png": {
-		"ft": 32768,
-		"iS": 1146,
-		"oA": 0,
-		"oAP": "/deploy/img/icons/instagram.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/icons/twitter.png": {
-		"ft": 32768,
-		"iS": 841,
-		"oA": 0,
-		"oAP": "/deploy/img/icons/twitter.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/icons/youtube.png": {
-		"ft": 32768,
-		"iS": 774,
-		"oA": 0,
-		"oAP": "/deploy/img/icons/youtube.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg": {
+	"/deploy/img/bizcard-table.jpg": {
 		"ft": 16384,
 		"iS": 84293,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Letterpress-Perspective-B-Cards-MockUp-6001.jpg",
+		"oAP": "/deploy/img/bizcard-table.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/main_slide_21.jpg": {
+	"/deploy/img/crop-legs.jpg": {
 		"ft": 16384,
-		"iS": 1423110,
+		"iS": 104961,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/main_slide_21.jpg",
+		"oAP": "/deploy/img/crop-legs.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/icons/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/icons/facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/icons/instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/icons/instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/icons/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/icons/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/icons/youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/icons/youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/londoner-sign.jpg": {
+		"ft": 16384,
+		"iS": 139189,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/londoner-sign.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/ocean-waves-hero.jpg": {
+		"ft": 16384,
+		"iS": 271063,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/ocean-waves-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/start/start-desktop.png": {
+		"ft": 32768,
+		"iS": 6968,
+		"oA": 0,
+		"oAP": "/deploy/img/start/start-desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/start/start-mobile.png": {
+		"ft": 32768,
+		"iS": 3092,
+		"oA": 0,
+		"oAP": "/deploy/img/start/start-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/start/start-tablet.png": {
+		"ft": 32768,
+		"iS": 4791,
+		"oA": 0,
+		"oAP": "/deploy/img/start/start-tablet.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/start/start-xl.png": {
+		"ft": 32768,
+		"iS": 8262,
+		"oA": 0,
+		"oAP": "/deploy/img/start/start-xl.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {

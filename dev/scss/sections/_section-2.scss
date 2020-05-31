@@ -2,49 +2,83 @@
     Section 2
 ============= */
 #section-2{
-    background-color: $gray;
-    
-    #section-2-content{
-        text-align: justify;
-        padding: 30px 10px 50px 10px;
-        
-        h1{
-            text-align: center;
-        }
-    }
-
-    #legs-img{
-        background-image: url('../img/4141.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 320px;
-        
-    }
 
     #section-2-container{
+
+        background-color: $gray;
+    
+        #section-2-content{
+        text-align: justify;
+        padding: 50px 10px 100px 10px;
+
+            h1{
+                text-align: center;
+                font-size: rem-calc(35);
+                margin: 0px;
+
+                @include lg{
+                    font-size: rem-calc(45);
+                }
+            }
+
+            p{
+                font-size: rem-calc(16);
+                line-height: rem-calc(21);
+
+                @include md{
+                    font-size: rem-calc(17);
+                }
+
+                @include lg{
+                    font-size: rem-calc(20);
+                    line-height: rem-calc(29);
+                    text-align: justify;
+                }
+            }
+        }
+
+        #legs-img{
+            background-image: url('../img/crop-legs.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 320px;
+
+        }
 
         @include md{
             display: grid;
             grid-template-columns: 70% 30%;
+            grid-template-rows: 250px;
             grid-template-areas: "text img";
 
             #section-2-content{
                 grid-area: text;
-                margin: 10px 20px;
+                padding: 25px 40px;
+
+                h1,h2{
+                    text-align: left;
+                }
                 
             }
 
-            
+            #legs-img{
+                grid-area: img;
+                height: 250px;
+            }
         }
 
         @include lg{
             grid-template-columns: 50% 50%;
+            grid-template-rows: 600px;
             grid-template-areas: "img text";
 
             #section-2-content{
+                margin: 100px 70px auto 70px;
+
                 text-align: justify;
-                padding: 110px 60px;
-                font-size: rem-calc(18);
+                width: 340px;
+                
+                
             }
 
             #legs-img{

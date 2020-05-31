@@ -3,83 +3,127 @@
 ============= */
 #section-1{
     div{
-        background-image: url('../img/main_slide_21.jpg');
+        background-image: url('../img/ocean-waves-hero.jpg');
         background-size: cover;
         background-position: center;
-        height: 600px;
+        height: 560px;
         position:relative;
 
-        text-align: center;
-        padding-top: 80px;
-
-        h2{
-            @include md{
-                max-width: 500px;
-
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            @include lg{
-                max-width: 650px;
-            }
-
-            @include xl{
-                max-width: 700px;
-            }
-        }
-
-        #circle{
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid $white;
-            margin-top: 180px;
-
-            margin-left: auto;
-            margin-right: auto;
-    
-            font-size: rem-calc(20);
-            color: #fff;
-            line-height: 90px;
-
-            @include md{
-                width: 100px;
-                height: 100px;
-                line-height: 110px;
-                border-width: 3px;
-                margin-top: 280px;
-            }
-
-            @include lg{
-                width: 120px;
-                height: 120px;
-                line-height: 130px;
-                font-size: rem-calc(25);
-                border-width: 5px;
-                margin-top: 350px;
-            }
-
-            @include lg{
-                width: 150px;
-                height: 150px;
-                line-height: 150px;
-            }
-        }
+        display: grid;
+        grid-template-columns: 20px auto 10px;
+        grid-template-areas: ". s1 .";
 
         @include md{
+            grid-template-columns: auto 500px auto;
             height: 700px;
         }
 
         @include lg{
+            grid-template-columns: auto 650px auto;
             height: 800px;
-            font-size: rem-calc(18);
         }
 
         @include xl{
-            font-size: rem-calc(20);
-            max-height: 950px;
+            grid-template-columns: auto 800px auto;
+            height: 1000px;
         }
+
+        #Intro{
+            grid-area: s1;
+
+            text-align: center;
+            margin-top: 70px;
+
+            h1, h2{
+                margin: 0px;
+            }
+
+            h1{
+                font-size: rem-calc(24);
+
+                @include md{
+                    font-size: rem-calc(38);
+                }
+
+                @include lg{
+                    font-size: rem-calc(60);
+                }
+
+                @include xl{
+                    font-size: rem-calc(70);
+                    margin-bottom: 20px;
+                }
+            }
+
+            h2{
+                font-size: rem-calc(16);
+                margin-bottom: 200px;
+
+                @include md{
+                    font-size: rem-calc(25);
+                    margin-bottom: 250px;
+                }
+
+                @include lg{
+                    font-size: rem-calc(32);
+                }
+
+                @include xl{
+                    
+                }
+            }
+
+
+            #start-mobile{
+                @include md{
+                    display: none;
+                }
+                
+            }
+    
+            #start-tablet{
+                display: none;
+    
+                @include md{
+                    display: inline;
+                }
+    
+                @include lg{
+                    display: none;
+                }
+            }
+    
+            #start-desktop{
+                display: none;
+    
+                @include lg{
+                    display: inline;
+                }
+    
+                @include xl{
+                    display: none;
+                }
+            }
+    
+            #start-xl{
+                display: none;
+    
+                @include xl{
+                    display: block;
+                    text-align: center;
+                    margin-left: 300px;
+                    
+                   
+                }
+                
+            }
+    
+    
+
+            
+        }
+
+
 
         
 
